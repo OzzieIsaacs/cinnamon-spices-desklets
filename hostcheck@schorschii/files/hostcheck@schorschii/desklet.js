@@ -8,18 +8,21 @@ const Main = imports.ui.main;
 const Clutter = imports.gi.Clutter;
 const Cairo = imports.cairo;
 const Gio = imports.gi.Gio;
+const Gettext = imports.gettext;
 
 const UUID = "hostcheck@schorschii";
 const DESKLET_ROOT = imports.ui.deskletManager.deskletMeta[UUID].path;
 
 // translation support
-const Gettext = imports.gettext;
-Gettext.bindtextdomain(UUID, GLib.get_home_dir() + "/.local/share/locale");
 function _(str) {
 	return Gettext.dgettext(UUID, str);
 }
 
 function MyDesklet(metadata, desklet_id) {
+	// translation init: if installed in user context, switch to translations in user's home dir
+	if(!DESKLET_ROOT.startsWith("/usr/share/")) {
+		Gettext.bindtextdomain(UUID, GLib.get_home_dir() + "/.local/share/locale");
+	}
 	this._init(metadata, desklet_id);
 }
 
@@ -86,21 +89,22 @@ MyDesklet.prototype = {
 			flags: Gio.SubprocessFlags.STDOUT_PIPE,
 		});
 		if(this.type == 'ping') {
-			subprocess = new Gio.Subprocess({
-				argv: ['/bin/ping',this.host,'-c1','-w2'],
+			let subprocessl = new Gio.SubprocessLauncher({
 				flags: Gio.SubprocessFlags.STDOUT_PIPE,
 			});
+			subprocessl.setenv("LANG", "en", true);
+			subprocess = subprocessl.spawnv(['/bin/ping',this.host,'-c1','-w2']);
 		}
 		else if(this.type == 'http') {
 			subprocess = new Gio.Subprocess({
 				argv: ['/usr/bin/curl','-s','-o','/dev/null','-w','"%{http_code}"','-m','5',this.host],
 				flags: Gio.SubprocessFlags.STDOUT_PIPE,
 			});
+			subprocess.init(null);
 		}
 		else {
 			return;
 		}
-		subprocess.init(null);
 		subprocess.desklet = this;
 		subprocess.wait_async(null, this.commandCallback);
 	},

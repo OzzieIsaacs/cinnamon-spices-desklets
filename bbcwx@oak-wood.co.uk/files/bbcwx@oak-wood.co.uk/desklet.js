@@ -893,6 +893,8 @@ MyDesklet.prototype = {
     //global.log('bbcwx: geo, calling ' + url);
     var here = this;
     let message = Soup.Message.new('GET', url);
+    _httpSession.timeout = 10;
+    _httpSession.idle_timeout = 10;
     _httpSession.queue_message(message, function (session, message) {
       if( message.status_code == 200) {
         try {callback.call(here,message.response_body.data.toString(),locsrc);} catch(e) {global.logError(e)}
@@ -1436,6 +1438,8 @@ wxDriver.prototype = {
     //global.log('bbcwx: calling ' + url);
     var here = this;
     let message = Soup.Message.new('GET', url);
+    _httpSession.timeout = 10;
+    _httpSession.idle_timeout = 10;
     _httpSession.queue_message(message, function (session, message) {
       if( message.status_code == 200) {
         try {callback.call(here,message.response_body.data.toString());} catch(e) {global.logError(e)}
@@ -1711,7 +1715,7 @@ wxDriverBBC.prototype = {
       let title = item.getChildElement("title").getText();
       desc = desc.replace('mb,', 'mb|');
       this.data.cc.weathertext = title.split(':')[2].split(',')[0].trim();
-      if (this.data.cc.weathertext.toLowerCase() == 'null') this.data.cc.weathertext = '';
+      if ((this.data.cc.weathertext.toLowerCase() == 'null') || (this.data.cc.weathertext.includes('Not available'))) this.data.cc.weathertext = '';
       let parts = desc.split(',');
       for (let b=0; b<parts.length; b++) {
         let k, v;

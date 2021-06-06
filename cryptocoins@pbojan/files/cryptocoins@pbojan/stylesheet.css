@@ -4,8 +4,6 @@
     font-family: Ubuntu, sans-serif, serif;
     font-weight: bold;
     text-align: center;
-    background-color: #303030;
-    border-radius: 10px;
 }
 
 .row {
@@ -34,6 +32,17 @@
     color: #f9a7b5;
     text-align: center;
     margin: 2px auto 5px auto;
+}
+
+.containerAssetsOwned {
+    color: #a6ccf3;
+    text-align: center;
+    margin: 10px auto 2px auto;
+}
+
+.containerAssetsValue {
+    text-align: center;
+    margin: 2px auto 2px auto;
 }
 
 .containerCenter .left {
