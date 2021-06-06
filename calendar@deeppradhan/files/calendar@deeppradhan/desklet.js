@@ -99,9 +99,9 @@ MyDesklet.prototype = {
 		this.tableMonth = new St.Table();
 
 		this.labelPrevious.style = "text-align: left;";
-		this.labelPrevious.set_text("\u2BC7");
+		this.labelPrevious.set_text("<");
 		this.labelNext.style = "text-align: right;";
-		this.labelNext.set_text("\u2BC8");
+		this.labelNext.set_text(">");
 		this.labelMonth.style = STYLE_LABEL_DAY + " font-weight: bold;";
 
 		// Create labels for weekdays
