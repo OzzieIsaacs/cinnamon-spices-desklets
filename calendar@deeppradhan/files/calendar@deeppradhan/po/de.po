@@ -7,15 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Calendar Desklet - 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-02 16:49+0100\n"
-"PO-Revision-Date: 2018-11-02 16:54+0100\n"
-"Last-Translator: Ozzie Isaacs <ozzie.fernandez.isaacs@googlemail.com>\n"
-"Language-Team: DE\n"
+"POT-Creation-Date: 2021-03-18 19:52+0100\n"
+"PO-Revision-Date: 2021-03-18 19:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: desklet.js:117 desklet.js:223
 msgid "CW"
@@ -23,11 +24,32 @@ msgstr "KW"
 
 #: desklet.js:137
 msgid "Previous month..."
-msgstr "Vorheriger Monat..."
+msgstr "Vorheriger Monat…"
 
 #: desklet.js:139
 msgid "Next month..."
-msgstr "Nächster Monat..."
+msgstr "Nächster Monat…"
+
+#. metadata.json->comments
+msgid ""
+"Calendar Desklet provides a highly configurable desklet to display current "
+"date and browsable months. It has a number of possible customisations."
+msgstr ""
+"Kalender-Desklet bietet ein hochgradig konfigurierbares Desklet zur Anzeige "
+"des aktuellen Datums und durchsurchbare Monate. Es hat eine Vielzahl von "
+"möglichen Anpassungsmöglichkeiten."
+
+#. metadata.json->contributors
+msgid "Deep Pradhan"
+msgstr "Deep Pradhan"
+
+#. metadata.json->description
+msgid "Configurable Calendar desklet"
+msgstr "Konfigurierbares Kalender-Desklet"
+
+#. metadata.json->name
+msgid "Calendar desklet"
+msgstr "Kalender-Desklet"
 
 #: desklet.js:155
 msgid "Calendar"
@@ -113,19 +135,19 @@ msgstr "Samstag"
 
 #. settings-schema.json->top->description
 msgid "Calendar configuration"
-msgstr "Kalender Einstellungen"
+msgstr "Kalendereinstellungen"
 
 #. settings-schema.json->panels->description
 msgid "Panels to show"
-msgstr "Panels für Anzeige"
+msgstr "Anzuzeigende Leisten"
 
 #. settings-schema.json->panels->options
 msgid "Both Today & Month"
-msgstr "Anzeige heutiger Tag & Monat"
+msgstr "Tag & Monat"
 
 #. settings-schema.json->panels->options
 msgid "Today only"
-msgstr "Nur heutiger Tag"
+msgstr "Nur heute"
 
 #. settings-schema.json->panels->options
 msgid "Month only"
@@ -133,11 +155,11 @@ msgstr "Nur Monat"
 
 #. settings-schema.json->panels->tooltip
 msgid "Select the panels to display in desklet"
-msgstr "Wähle welche Panels im Desklet angezeigt werden"
+msgstr "Leisten auswählen, die im Desklet angezeigt werden sollen"
 
 #. settings-schema.json->show-weekday->description
 msgid "Show day of week"
-msgstr "Anzeige Tag der Woche"
+msgstr "Wochentag anzeigen"
 
 #. settings-schema.json->show-weekday->options
 #. settings-schema.json->show-year->options
@@ -157,34 +179,34 @@ msgstr "Kurz"
 #. settings-schema.json->show-weekday->tooltip
 msgid "For day of week; show full name, short name or disable showing"
 msgstr ""
-"Darstellung des Tages der Woche; vollständiger, verkürzter Name oder "
-"deaktiviere Darstellung"
+"Für Wochentag; vollständigen Namen anzeigen, Kurznamen anzeigen oder Anzeige "
+"deaktivieren"
 
 #. settings-schema.json->short-month-name->description
 msgid "Short month name"
-msgstr "Kurzer Monatsname"
+msgstr "Kurzbezeichnung des Monats"
 
 #. settings-schema.json->short-month-name->tooltip
 msgid "Show short month name"
-msgstr "Stelle den verkürzten Monatsnamen dar"
+msgstr "Kurzbezeichnung des Monats anzeigen"
 
 #. settings-schema.json->show-year->description
 msgid "Show year"
-msgstr "Jahresanzeige"
+msgstr "Jahr anzeigen"
 
 #. settings-schema.json->show-year->tooltip
 msgid "For year; show all digits, show last two digits or disable showing"
 msgstr ""
-"Darstellung des Jahres; Vollständige, verkürzte Jahresanzeige, oder "
-"deaktiviere Darstellung"
+"Für Jahr; alle Ziffern anzeigen, die letzten beiden Ziffern anzeigen oder "
+"die Anzeige deaktivieren"
 
 #. settings-schema.json->show-time->description
 msgid "Show time"
-msgstr "Zeitanzeige"
+msgstr "Uhrzeit anzeigen"
 
 #. settings-schema.json->show-time->tooltip
 msgid "Show or hide time (hours and minutes)"
-msgstr "Stelle die Zeit dar, oder verstekce die Anzeige (Stunde und Minute)"
+msgstr "Uhrzeit ein- oder ausblenden (Stunden und Minuten)"
 
 #. settings-schema.json->first-day-of-week->description
 msgid "First day of week"
@@ -206,7 +228,7 @@ msgstr "Anzeige der Kalenderwoche nach ISO8601 im Monatskalender"
 
 #. settings-schema.json->display->description
 msgid "Desklet style configuration"
-msgstr "Desklet Style Einstellung"
+msgstr "Desklet-Stil-Konfiguration"
 
 #. settings-schema.json->layout->description
 msgid "Layout of desklet"
@@ -222,19 +244,19 @@ msgstr "Vertikal"
 
 #. settings-schema.json->layout->tooltip
 msgid "Set the overall layout to horizontal/vertical of desklet"
-msgstr "Wähle als generelles Layout des Desklets Horizontal oder Vertikal"
+msgstr "Das Gesamtlayout des Desklets auf horizontal/vertikal einstellen"
 
 #. settings-schema.json->custom-font-family->description
 msgid "Custom font family for text (blank to use default)"
 msgstr ""
-"Benutzerdefinierte Schriftfamilie für Text (freilassen um die "
-"Standardschriftart zu benutzen)"
+"Benutzerdefinierte Schriftfamilie für Text (leer lassen, um Standard zu "
+"verwenden)"
 
 #. settings-schema.json->custom-font-family->tooltip
 msgid "Set a custom font family for the text (blank to use default font)"
 msgstr ""
-"Wähle eine benutzerdefinierte Schriftfamilie für Texte (freilassen um die "
-"Standardschriftart zu benutzen)"
+"Eine benutzerdefinierte Schriftfamilie für den Text festlegen (leer lassen, "
+"um die Standardschrift zu verwenden)"
 
 #. settings-schema.json->font-size->description
 msgid "Font size (pt)"
@@ -242,7 +264,7 @@ msgstr "Schriftgröße (pt)"
 
 #. settings-schema.json->font-size->tooltip
 msgid "Set the text font size in points"
-msgstr "Stelle die Schriftgröße in Punkten ein"
+msgstr "Einstellen der Textschriftgröße in Punkt"
 
 #. settings-schema.json->colour-text->description
 msgid "Text colour"
@@ -250,15 +272,15 @@ msgstr "Textfarbe"
 
 #. settings-schema.json->colour-text->tooltip
 msgid "Set text colour of desklet"
-msgstr "Wähle die Textfarbe des Desklets"
+msgstr "Textfarbe des Desklet einstellen"
 
 #. settings-schema.json->colour-sundays->description
 msgid "Text colour for Sundays"
-msgstr "Textfarbe für Sonntag"
+msgstr "Textfarbe für Sonntage"
 
 #. settings-schema.json->colour-sundays->tooltip
 msgid "Set text colour for Sundays"
-msgstr "Wähle die Textfarbe für Sonntage"
+msgstr "Textfarbe für Sonntage einstellen"
 
 #. settings-schema.json->colour-saturdays->description
 msgid "Text colour for Saturdays"
@@ -266,7 +288,7 @@ msgstr "Textfarbe für Samstage"
 
 #. settings-schema.json->colour-saturdays->tooltip
 msgid "Set text colour for Saturdays"
-msgstr "Wähle die Textfarbe für Samstage"
+msgstr "Textfarbe für Samstage einstellen"
 
 #. settings-schema.json->colour-background->description
 msgid "Background colour"
@@ -274,32 +296,12 @@ msgstr "Hintergrundfarbe"
 
 #. settings-schema.json->colour-background->tooltip
 msgid "Set background colour of desklet"
-msgstr "Wähle die Hintergrundfarbe des Desklets"
+msgstr "Hintergrundfarbe des Desklets einstellen"
 
 #. settings-schema.json->transparency->description
 msgid "Transparency (%)"
-msgstr "Transparenz in (%)"
+msgstr "Transparenz (%)"
 
 #. settings-schema.json->transparency->tooltip
 msgid "Set the transparency of desklet in percentage"
-msgstr "Stelle die Transparenz des Desklets in Prozent ein"
-
-#. metadata.json->comments
-msgid ""
-"Calendar Desklet provides a highly configurable desklet to display current "
-"date and browsable months. It has a number of possible customisations."
-msgstr ""
-"Das Kalender Desklet stellt ein konfigurierbares Desklet zur Darstellung des "
-"aktuellen Datums und des Monats dar. Die Darstellung ist anpassbar."
-
-#. metadata.json->contributors
-msgid "Deep Pradhan"
-msgstr "Deep Pradhan"
-
-#. metadata.json->description
-msgid "Configurable Calendar desklet"
-msgstr "Konfigurierbares Kalender Desklet"
-
-#. metadata.json->name
-msgid "Calendar desklet"
-msgstr "Kalender Desklet"
+msgstr "Transparenz des Desklets in Prozent einstellen"

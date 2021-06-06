@@ -1,5 +1,7 @@
 # cinnamon-spices-desklets
 
+![Validate spices](https://github.com/linuxmint/cinnamon-spices-desklets/workflows/Validate%20spices/badge.svg)
+
 This repository hosts all the desklets available for the Cinnamon desktop environment.
 
 Users can install spices from https://cinnamon-spices.linuxmint.com, or directly from within Cinnamon -> System Settings.
@@ -24,13 +26,13 @@ A spice can contain many files, but it should have the following file structure:
 
 - UUID/
 - UUID/info.json
-- UUID/icon.png
 - UUID/screenshot.png
 - UUID/README.md
 - UUID/files/
 - UUID/files/UUID
 - UUID/files/UUID/metadata.json
 - UUID/files/UUID/desklet.js
+- UUID/files/UUID/icon.png
 
 There are two important directories:
 
@@ -46,7 +48,6 @@ Important note:
 At the root level:
 
 - info.json contains information about the spice. For instance, this is the file which contains the github username of the spice's author.
-- icon.png is the icon associated with the spice.
 - screenshot.png is a screenshot of the spice in action.
 - README.md is optional and can be used to show instructions and information about the spice. It appears both in Github and on the website.
 
@@ -70,7 +71,7 @@ Authors are able to accept or refuse changes from other people which modify the 
 
 Authors may choose to pass on development of their desklet to someone else. In that case, the "author" field in UUID/info.json will be changed to the new developer and the "original_author" field will be added to give credit to the original developer.
 
-If an author abandons their desklet, the Linux Mint team will take over maintenance of the desklet or pass it on to someone else. Several factors are used to determine if an desklet is abandoned, including prolonged activity, failure to respond to requests, and serious breakages that have occurred due to changes in API, etc. If you plan to abandon a desklet, please notify us, so we don't have to guess as to whether it is abandoned or not.
+If an author abandons their desklet, the Linux Mint team will take over maintenance of the desklet or pass it on to someone else. Several factors are used to determine if a desklet is abandoned, including prolonged inactivity, failure to respond to requests, and serious breakages that have occurred due to changes in API, etc. If you plan to abandon a desklet, please notify us, so we don't have to guess as to whether it is abandoned or not.
 
 # Pull requests from authors and workflow
 
@@ -91,8 +92,8 @@ If everything is fine, the PR is merged, the website is updated and users can se
 In addition to the checks specified above, if the pull request comes from somebody other than the author, it will be held until the author reviews it or gives a thumbs-up, with the following exceptions:
 
 - If it is a bug fix, the PR may be merged, though if the bug is minor, or the fix could potentially impact the way the desklet works, we may wait for author approval before merging.
-- If the pull request adds translations it will likewise be merged. These are not going to effect the functionality of the code, and will make the desklet available to many users who couldn't use it before due to a language barrier. We view this a essentially a bugfix, but it is included here for clarification.
-- If the author fails to respond in a reasonable time, we will assume the desklet is abandoned (as mentioned above) and the pull request will be merged assuming it meets all other requirements.
+- If the pull request adds translations it will likewise be merged. These are not going to affect the functionality of the code, and will make the desklet available to many users who couldn't use it before due to a language barrier. We view this as essentially a bugfix, but it is included here for clarification.
+- If the author fails to respond in a reasonable time, we will assume the desklet is abandoned (as mentioned above) and the pull request will be merged, assuming it meets all other requirements.
 
 If the changes represent a change in functionality, or in look and feel, or if their implementation could be questioned and/or discussed, the reviewer should leave the PR open and ask the author to review it.
 
@@ -132,3 +133,11 @@ More info:
 ```
 ./cinnamon-spices-makepot --help
 ```
+
+# Translations Status Tables
+
+The spices receive updates which sometimes contain new or updated strings that need to be translated. The translation status tables were created to give translators a better overview of the current state of translations and also to make it easier to track where new untranslated strings appear.
+
+* [Translation Status Tables for Desklets](https://github.com/linuxmint/cinnamon-spices-desklets/blob/translation-status-tables/.translation-tables/tables/README.md)
+
+To ensure that these tables are always up-to-date, they are automatically regenerated whenever a new commit is pushed to the master branch.

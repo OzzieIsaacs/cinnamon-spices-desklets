@@ -41,6 +41,12 @@ msgstr "Dateisystem"
 msgid "RAM"
 msgstr "Arbeitsspeicher"
 
+msgid "Swap"
+msgstr "Swap-Speicher"
+
+msgid "Not Found"
+msgstr "Nicht gef."
+
 msgid "Filesystem to monitor"
 msgstr "Dateisystem, welches angezeigt werden soll"
 
@@ -50,17 +56,50 @@ msgstr "Wählen Sie das Dateisystem, welches Sie anzeigen möchten."
 msgid "Visual"
 msgstr "Visuelle Einstellungen"
 
+msgid "Design"
+msgstr "Design"
+
+msgid "Classic (Thick)"
+msgstr "Klassisch (Dick)"
+
+msgid "Thin"
+msgstr "Dünn"
+
+msgid "Compact"
+msgstr "Kompakt"
+
+msgid "Draw free/unused space (gray)"
+msgstr "Zeichne freien/unbenutzten Speicherplatz (grau)"
+
 msgid "Text"
 msgstr "Text"
 
-msgid "Name and total size"
+msgid "Name and total space"
 msgstr "Bezeichnung und Kapazität"
 
 msgid "Used and total space"
 msgstr "Belegter Speicherplatz und Kapazität"
 
+msgid "Total and used space"
+msgstr "Kapazität und Belegter Speicherplatz"
+
 msgid "Free and total space"
 msgstr "Freier Speicherplatz und Kapazität"
+
+msgid "Total and free space"
+msgstr "Kapazität und Freier Speicherplatz"
+
+msgid "No text"
+msgstr "Kein Text"
+
+msgid "Size Prefix"
+msgstr "Präfixe"
+
+msgid "Decimal"
+msgstr "Dezimal"
+
+msgid "Binary"
+msgstr "Binär"
 
 msgid "Hide decorations"
 msgstr "Dekorationen verstecken"
@@ -106,3 +145,18 @@ msgid ""
 msgstr ""
 "Legen Sie hier ihr eigenes Label fest. Dieses Feld ist nicht verfügbar, "
 "solange die Option darüber nicht aktiviert wurde."
+
+msgid "Action on mouse click"
+msgstr "Aktion bei Mausklick"
+
+msgid "Choose what to do when the desklet was clicked."
+msgstr "Wählen Sie, was passieren soll, wenn auf das Desklet geklickt wird."
+
+msgid "Open File Manager"
+msgstr "Dateimanager öffnen"
+
+msgid "Open Partition Manager"
+msgstr "Partitions-Editor öffnen"
+
+msgid "Nothing"
+msgstr "Nichts"
